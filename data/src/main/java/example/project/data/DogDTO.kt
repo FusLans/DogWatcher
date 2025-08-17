@@ -1,4 +1,4 @@
-package example.project.secondproject
+package example.project.data
 
 import kotlinx.serialization.Serializable
 

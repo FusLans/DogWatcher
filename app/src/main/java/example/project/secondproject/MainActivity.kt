@@ -37,47 +37,6 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
 
-            LazyColumn(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .statusBarsPadding()
-            ) {
-                items(
-                    viewmodel.dogList,
-                ) {
-                    Box(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .aspectRatio(1f)
-                    ) {
-                        AsyncImage(
-                            model = it.message,
-                            contentDescription = "Песик",
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .aspectRatio(1f)
-                                .clip(RoundedCornerShape(12.dp))
-                                .clickable(onClick = viewmodel::loadTwoDogs),
-                            contentScale = ContentScale.Fit,
-                        )
-                        Text(
-                            text = it.breed,
-                            modifier = Modifier.align(Alignment.TopStart),
-                            color = Color(0xFFFF2222)
-
-                        )
-                    }
-
-                }
-                item {
-                    Button(onClick = viewmodel::loadTwoDogs) {
-                        Text(
-                            text = "Загрузить"
-                        )
-
-                    }
-                }
-            }
 // lazycolumn для отображения списка собачек
         }
     }
