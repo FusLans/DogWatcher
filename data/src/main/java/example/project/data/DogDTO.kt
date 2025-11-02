@@ -6,5 +6,4 @@ import kotlinx.serialization.Serializable
 data class DogDTO(
     val message: String,
     val status: String,
-    val breed:String = "",
 )
