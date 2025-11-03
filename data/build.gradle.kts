@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt.android)
+
 }
 
 android {
@@ -40,13 +41,14 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(project(":domain"))
-    implementation(libs.koin.core)
-    implementation(libs.koin.android)
     implementation(libs.ktor.core)
     implementation(libs.ktor.okhttp)
     implementation(libs.kotlinx.serialization)
     implementation(libs.ktor.client.content.negotiation)
     implementation(libs.ktor.serialization)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.serialization)
+    implementation(libs.retrofit.converter.gson)
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
     ksp(libs.room.compiler)

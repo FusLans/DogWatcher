@@ -4,3 +4,4 @@ data class DogEntity(
     val imageURL: String,
     val breed: String,
 )
+
