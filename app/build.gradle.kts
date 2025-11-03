@@ -41,11 +41,8 @@ android {
 
 dependencies {
 
-    implementation(libs.ktor.core)
-    implementation(libs.ktor.okhttp)
+
     implementation(libs.kotlinx.serialization)
-    implementation(libs.ktor.client.content.negotiation)
-    implementation(libs.ktor.serialization)
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
     implementation(libs.retrofit)

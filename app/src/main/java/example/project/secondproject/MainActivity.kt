@@ -5,8 +5,8 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import dagger.hilt.android.AndroidEntryPoint
-import dagger.hilt.android.HiltAndroidApp
 import example.project.presentation.mainScreen.MainScreen
+
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
